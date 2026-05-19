@@ -36,3 +36,26 @@ Sigue estos pasos para reproducir el entorno y ejecutar el modelo en tu máquina
 ```bash
 git clone [https://github.com/TU-USUARIO/Machine-learning-UAEMex.git](https://github.com/TU-USUARIO/Machine-learning-UAEMex.git)
 cd Machine-learning-UAEMex
+```
+
+### 2. Configurar el entorno virtual (Recomendado)
+Para evitar conflictos de versiones con otras librerías, crea un entorno aislado:
+```bash
+python -m venv venv
+# En Windows:
+venv\Scripts\activate
+# En Mac/Linux:
+source venv/bin/activate
+```
+
+### 3. Instalar dependencias
+Instala las librerías necesarias ejecutando:
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Ejecución del Pipeline
+El análisis completo y el entrenamiento del modelo se encuentran documentados paso a paso. Para iniciar, abre el notebook principal:
+```bash
+jupyter notebook notebooks/NAB_Analysis_IsolationForest.ipynb
+```
